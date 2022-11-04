@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>    
+    </head>
+    <body>
+        <script>
+        
+        //Poly
+        
+        class brandA
+        {
+            display()
+            {
+                document.writeln("Brand A: Toyota<br>")
+
+            }
+        }
+
+        class brandB extends brandA{
+            display(){
+                document.writeln("Brand B: Honda")
+            }
+        }
+
+        var a = [new brandA(), new brandB()]
+        a.forEach(function(msg)
+        {
+            msg.display();
+        });
+
+
+        </script>
+    </body>
+</html>

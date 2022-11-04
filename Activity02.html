@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+         function vehicle()
+         {
+            this.vehicletype = "vehicletype";
+         }
+         vehicle.prototype.display = function()
+         {
+            return "The brand is: " + this.vehicletype;
+         }
+
+         function myCar(vehicletype)
+         {
+            this.vehicletype = vehicletype;
+         }
+
+         myCar.prototype = Object.create(vehicle.prototype);
+         var mycar = new myCar ("Toyota");
+
+         alert(mycar.display());
+
+        </script>
+    </body>
+</html>

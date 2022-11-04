@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="script.js">
+        </script>
+    </head>
+    <body>
+        <script>
+            
+            // alert(car.transmission);
+            // alert(car["transmission"]);
+            //alert(car.lights.rear);
+            //car.displayBrand();
+            //const Cars = new myCar ("Toyota","Wigo","Automatic")
+            //alert(Cars.brand);
+
+            class myRide{
+                constructor(){
+                    var brand;
+                    var variant;
+                }
+                getName(){
+                    return this.brand;
+                }
+                setName(brand){
+                    this.brand=brand;
+                }
+                getVariant(){
+                    return this.variant;
+                }
+                setVariant(variant){
+                    this.variant=variant;
+                }
+            }
+            
+            var Rides = new myRide();
+            
+            Rides.setName("Toyota");
+            Rides.seVariant("Wigo");
+
+            alert(Rides.getName()+" "+Rides.getVariant());
+
+        </script>
+    </body>
+</html>
